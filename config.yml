@@ -1,0 +1,16 @@
+title: Gacha club oc maker
+description: Make your own little cute oc today!
+template:
+  repo: gacha-club-oc-maker-template
+  name: gacha-club-oc-maker
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
